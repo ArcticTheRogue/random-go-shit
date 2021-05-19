@@ -14,7 +14,7 @@ func main() {
 	var yourAnswer int
 
 	fmt.Println("What is:", number1, "+", number2, "?")
-	fmt.Println("Enter answer:")
+	fmt.Print("Enter answer: ")
 	fmt.Scanf("%d", &yourAnswer)
 	fmt.Println("Your answer is:", yourAnswer)
 
