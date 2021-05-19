@@ -8,8 +8,8 @@ import (
 
 func main() {
 	rand.Seed(time.Now().Unix())
-	var number1 = rand.Intn(5)
-	var number2 = rand.Intn(5)
+	var number1 = rand.Intn(10)
+	var number2 = rand.Intn(10)
 	var correctAnswer int = number1 + number2
 	var yourAnswer int
 
