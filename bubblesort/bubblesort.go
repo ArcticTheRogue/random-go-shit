@@ -1,11 +1,16 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"math/rand"
+	"time"
+)
 
 func main() {
 	fmt.Println("Hello, world!")
+	rand.Seed(time.Now().Unix())
 	// set numbers
-	numbers := [5]int{5, 1, 4, 2, 8}
+	numbers := [5]int{rand.Intn(10), rand.Intn(10), rand.Intn(10), rand.Intn(10), rand.Intn(10)}
 	fmt.Println(numbers)
 	sort(numbers[:])
 }
