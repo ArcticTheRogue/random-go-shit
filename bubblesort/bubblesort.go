@@ -10,9 +10,11 @@ func main() {
 	// set vars for first set of numbers
 	var a = 0
 	var b = 1
+	// set boolean to see if it is sorted
+	sorted := false
 	fmt.Println(numbers[a], numbers[b])
-	// set for loop for if set does is less or equal to the last set
-	for a <= 3 && b <= 4 {
+	// set for loop for if set does is less or equal to the last set and it is not sorted
+	for a <= 3 && b <= 4 && sorted == false {
 		// if statement for if the first number is larger than the second
 		if numbers[a] > numbers[b] {
 			//swap numbers
