@@ -9,11 +9,12 @@ func main() {
 	var a = 0
 	var b = 1
 	fmt.Println(numbers[a], numbers[b])
-	if a < 3 && b < 4 {
+	for a < 3 && b < 4 {
 		if numbers[a] > numbers[b] {
 			numbers[a], numbers[b] = numbers[b], numbers[a]
 			fmt.Println(numbers)
-			return
+			a += 1
+			b += 1
 		}
 	}
 }
