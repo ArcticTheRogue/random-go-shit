@@ -17,19 +17,19 @@ func main() {
 	switch name {
 	case options[0]:
 		c := 0
-		solve(c)
+		solve(c, options[:])
 	case options[1]:
 		c := 1
-		solve(c)
+		solve(c, options[:])
 	case options[2]:
 		c := 2
-		solve(c)
+		solve(c, options[:])
 	default:
 		fmt.Println("Not a valid option")
 	}
 }
 
-func solve(c int) {
+func solve(c int, options []string) {
 	rand.Seed(time.Now().UnixNano())
 	var a = rand.Intn(2)
 	if c == a {
@@ -38,28 +38,28 @@ func solve(c int) {
 		if c == 0 {
 			switch {
 			case a == 2:
-				fmt.Println("Bot chooses", a)
+				fmt.Println("Bot chooses", options[a])
 				fmt.Println("You win")
 			case a == 1:
-				fmt.Println("Bot chooses", a)
+				fmt.Println("Bot chooses", options[a])
 				fmt.Println("You lose")
 			}
 		} else if c == 1 {
 			switch {
 			case a == 0:
-				fmt.Println("Bot chooses", a)
+				fmt.Println("Bot chooses", options[a])
 				fmt.Println("You win")
 			case a == 2:
-				fmt.Println("Bot chooses", a)
+				fmt.Println("Bot chooses", options[a])
 				fmt.Println("You lose")
 			}
 		} else if c == 2 {
 			switch {
 			case a == 1:
-				fmt.Println("Bot chooses", a)
+				fmt.Println("Bot chooses", options[a])
 				fmt.Println("You win")
 			case a == 0:
-				fmt.Println("Bot chooses", a)
+				fmt.Println("Bot chooses", options[a])
 				fmt.Println("You lose")
 			}
 		}
