@@ -32,10 +32,9 @@ func main() {
 func solve(c int) {
 	rand.Seed(time.Now().UnixNano())
 	var a = rand.Intn(2)
-	switch {
-	case c == a:
+	if c == a {
 		fmt.Println("Tie")
-	default:
+	} else {
 		switch c == 0 {
 		case a == 2:
 			fmt.Println("Bot chooses", a)
