@@ -35,29 +35,35 @@ func solve(c int) {
 	if c == a {
 		fmt.Println("Tie")
 	} else {
-		switch c == 0 {
-		case a == 2:
-			fmt.Println("Bot chooses", a)
-			fmt.Println("You win")
-		case a == 1:
-			fmt.Println("Bot chooses", a)
-			fmt.Println("You lose")
+		if c == 0 {
+			switch {
+			case a == 2:
+				fmt.Println("Bot chooses", a)
+				fmt.Println("You win")
+			case a == 1:
+				fmt.Println("Bot chooses", a)
+				fmt.Println("You lose")
+			}
 		}
-		switch c == 1 {
-		case a == 0:
-			fmt.Println("Bot chooses", a)
-			fmt.Println("You win")
-		case a == 2:
-			fmt.Println("Bot chooses", a)
-			fmt.Println("You lose")
+		if c == 1 {
+			switch {
+			case a == 0:
+				fmt.Println("Bot chooses", a)
+				fmt.Println("You win")
+			case a == 2:
+				fmt.Println("Bot chooses", a)
+				fmt.Println("You lose")
+			}
 		}
-		switch c == 2 {
-		case a == 1:
-			fmt.Println("Bot chooses", a)
-			fmt.Println("You win")
-		case a == 0:
-			fmt.Println("Bot chooses", a)
-			fmt.Println("You lose")
+		if c == 2 {
+			switch c == 2 {
+			case a == 1:
+				fmt.Println("Bot chooses", a)
+				fmt.Println("You win")
+			case a == 0:
+				fmt.Println("Bot chooses", a)
+				fmt.Println("You lose")
+			}
 		}
 	}
 }
