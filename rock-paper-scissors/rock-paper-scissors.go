@@ -56,7 +56,7 @@ func solve(c int) {
 			}
 		}
 		if c == 2 {
-			switch c == 2 {
+			switch {
 			case a == 1:
 				fmt.Println("Bot chooses", a)
 				fmt.Println("You win")
