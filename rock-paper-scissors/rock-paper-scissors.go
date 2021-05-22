@@ -16,9 +16,18 @@ func main() {
 	fmt.Printf("Please choose an option: ")
 	fmt.Scanf("%s", &name)
 	fmt.Println("You chose: ", name)
-	var b = options[a]
+	convert(name, options[:])
+}
+
+func convert(name string, options []string) {
 	switch name {
-	case b:
-		fmt.Println("Tie")
+	case options[0]:
+		c := 0
+	case options[1]:
+		c := 1
+	case options[2]:
+		c := 2
+	default:
+		fmt.Println("Not a valid option")
 	}
 }
