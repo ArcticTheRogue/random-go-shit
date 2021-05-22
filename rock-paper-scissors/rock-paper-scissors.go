@@ -44,8 +44,7 @@ func solve(c int) {
 				fmt.Println("Bot chooses", a)
 				fmt.Println("You lose")
 			}
-		}
-		if c == 1 {
+		} else if c == 1 {
 			switch {
 			case a == 0:
 				fmt.Println("Bot chooses", a)
@@ -54,8 +53,7 @@ func solve(c int) {
 				fmt.Println("Bot chooses", a)
 				fmt.Println("You lose")
 			}
-		}
-		if c == 2 {
+		} else if c == 2 {
 			switch {
 			case a == 1:
 				fmt.Println("Bot chooses", a)
