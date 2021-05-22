@@ -30,7 +30,7 @@ func main() {
 }
 
 func solve(c int) {
-	rand.Seed(time.Now().Unix())
+	rand.Seed(time.Now().UnixNano())
 	var a = rand.Intn(2)
 	switch {
 	case c == a:
