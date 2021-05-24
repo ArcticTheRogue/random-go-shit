@@ -31,7 +31,7 @@ func main() {
 
 func solve(c int, options []string) {
 	rand.Seed(time.Now().UnixNano())
-	var a = rand.Intn(2)
+	var a = rand.Intn(3)
 	if c == a {
 		fmt.Println("Tie")
 	} else {
